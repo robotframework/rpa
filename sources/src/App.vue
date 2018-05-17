@@ -65,12 +65,18 @@ export default {
             },
 
             table: {
-              rows: [
-                {
-                  title: "",
-                  open_solution: "Open Solution",
-                  closed_solution: "Closed Solution"
+              fields: {
+                title: {
+                  label: " "
                 },
+                open_solution: {
+                  label: "Open solution"
+                },
+                closed_solution: {
+                  label: "Closed solution"
+                }
+              },
+              rows: [
                 {
                   title: "Licence costs",
                   open_solution: "None",
@@ -142,25 +148,25 @@ export default {
             text: {
               header: "FAQ",
               text:
-                "Please find here some frequently asked questions related to Robot Framework RPA Tool:\
-                <p>Q: What is the price for Robot Framework RPA Tool?\
-                A: Robot Framework RPA tool is an open source tool and it is free to use without license costs.</p>\
-                <p>Q: license? \
-                A: Apache License 2.0</p>\
-                <p>Q: What do I need to get started?\
-                A: </p>\
-                <p>Q: What does it take for one to learn to develop robots with Robot Framework?\
-                A: A good start is if you’ve used Robot Framework before. If you haven’t, no problem. Basic Python skills are enough? There are also foundation courses available for those who are beginning their journey with Robot Framework.</p>\
-                <p>Q: How does it differentiate with Robot Framework for test automation?\
-                A: Robot Framework is the core and you can do test automation and/or RPA with it. The main difference between these two is that in test automation you automate test cases and in RPA you automate processes. \
-                <p>Q: Does this RPA tool scale up and down?\
-                A: Yes and yes. In Robot Framework RPA you can add any number of robots whilst in other tools you pay for adding additional robots. </p>\
-                <p>Q: How are security issues handled?\
-                A:</p>\
-                <p>Q: Where is Robot Framework RPA used?\
-                A: Anywhere where processes can be automated. </p>\
-                <p>Q: Is there future development provided for this tool?\
-                A: Yes, Robot Framework Foundation is enabling future development for this tool.</p>"
+                '<p>Please find here some frequently asked questions related to Robot Framework RPA Tool:</p>\
+                <div class="faq"><p><b>Q</b>: What is the price for Robot Framework RPA Tool?</p>\
+                <p>Robot Framework RPA tool is an open source tool and it is free to use without license costs.</p>\
+                <p><b>Q</b>: license?</p> \
+                <p>Apache License 2.0</p>\
+                <p><b>Q</b>: What do I need to get started?</p>\
+                <p></p>\
+                <p><b>Q</b>: What does it take for one to learn to develop robots with Robot Framework?</p>\
+                <p>A good start is if you’ve used Robot Framework before. If you haven’t, no problem. Basic Python skills are enough? There are also foundation courses available for those who are beginning their journey with Robot Framework.</p>\
+                <p><b>Q</b>: How does it differentiate with Robot Framework for test automation?</p>\
+                <p>Robot Framework is the core and you can do test automation and/or RPA with it. The main difference between these two is that in test automation you automate test cases and in RPA you automate processes. \
+                <p><b>Q</b>: Does this RPA tool scale up and down?</p>\
+                <p>Yes and yes. In Robot Framework RPA you can add any number of robots whilst in other tools you pay for adding additional robots. </p>\
+                <p><b>Q</b>: How are security issues handled?</p>\
+                <p></p>\
+                <p><b>Q</b>: Where is Robot Framework RPA used?</p>\
+                <p>Anywhere where processes can be automated. </p>\
+                <p><b>Q</b>: Is there future development provided for this tool?</p>\
+                <p>Yes, Robot Framework Foundation is enabling future development for this tool.</p></div>'
             }
           }
         },

@@ -325,13 +325,27 @@ hr {
   font-family: Courier;
 }
 
-th {
-  display: none;
-}
-
 table {
   margin: 30px 0;
   font-size: 1rem;
+}
+
+div.faq p {
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+div.faq p:nth-child(2n) {
+  color: rgb(0, 192, 181);
+  font-style: italic;
+  font-weight: normal;
+  margin-bottom: 30px;
+  padding: 0;
+}
+
+tr td:first-child {
+  font-weight: bold;
 }
 
 .textblock-right {
