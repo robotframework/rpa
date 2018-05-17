@@ -178,7 +178,8 @@ export default {
           data: {
             text: {
               header: "Libraries",
-              text:
+              text: "",
+              notext:
                 '<p> Test libraries provide the actual testing capabilities to Robot Framework by providing keywords. There are several standard libraries that are bundled in with the framework, and galore of separately developed external libraries that can be installed based on your needs. Creating your own test libraries <a href="http://robotframework.org/robotframework/latest/RobotFrameworkUserGuide.html#creating-test-libraries" target="_blank">is a breeze</a>. </p> <p> <a href="https://github.com/robotframework/robotframework.github.com" target="_blank">Let us know</a> if there are useful libraries missing from the list. </p>'
             },
             tabs: [
@@ -549,7 +550,8 @@ export default {
           data: {
             text: {
               header: "Tools",
-              text:
+              text: "",
+              notext:
                 '<p> Supporting tools ease everything surrounding tests: editing, running, building and so on. Most of these tools are developed as separate projects, but some are built into the framework itself. </p> <p> <a href="https://github.com/robotframework/robotframework.github.com" target="_blank">Let us know</a> if there are useful tools missing from the list. </p>'
             },
             tabs: [

@@ -6,8 +6,8 @@
     <div v-else-if="data.text != '' && data.header == ''" style="display:none;">
       <h1 v-html="data.header"/>
     </div>
-    <div v-else class="col-lg-12 order-1  pt-3 pd-0 md-0 center-align  align-center textblock-left">
-      <h1 style="text-align:center;" class="m-0 p-0" v-html="data.header"/>
+    <div v-else class="col-lg-12 order-1  p-3 pd-0 md-0 textblock-left">
+      <h1 class="" v-html="data.header"/>
     </div>
     <div v-if="data.text != '' && data.header != ''" class="col order-2 textblock-right ml-1 p-3">
       <div v-html="data.text"/>
