@@ -275,17 +275,14 @@ hr {
 }
 
 .card {
-  padding: 30px;
+  margin: 0;
   color: #666;
   line-height: 1.1rem;
   font-family: Georgia;
   border-radius: 0;
+  padding: 3px;
   border: none;
-  background-color: #e7e7e7;
   height: 100%;
-  -webkit-border-radius: 5px 5px 5px 5px;
-  -moz-border-radius: 5px 5px 5px 5px;
-  border-radius: 5px 5px 5px 5px;
 }
 
 .card.example {

@@ -1,6 +1,7 @@
 <template>
   <div class="row">
-        <b-tabs v-model="tabIndex" pills class="card nav-fill col-lg-12 m-3">
+    <div class="col">
+        <b-tabs v-model="tabIndex" pills class="card nav-fill col-lg-12">
           <b-tab v-for="(tab,index) in data" :key="index" :title="tab.title" class="p-1" @click="changeTab">
             <div id="{tab.title}-standard" class="card-body row">
               <div v-for="(item,index) in tab.items" :key="index" class="link  col-md-4">
@@ -14,6 +15,7 @@
             </div>
           </b-tab>
         </b-tabs>
+    </div>
   </div>
 </template>
 
