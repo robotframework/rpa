@@ -1,12 +1,18 @@
 <template>
   <div class="row justify-content-between no-gutters">
-    <div v-if="data.text != ''" class="col-md-5 col-lg-4 order-1 textblock-left p-3">
+    <div v-if="data.text != '' && data.header != ''" class="col-md-5 col-lg-4 order-1 textblock-left p-3">
+      <h1 v-html="data.header"/>
+    </div>
+    <div v-else-if="data.text != '' && data.header == ''" style="display:none;">
       <h1 v-html="data.header"/>
     </div>
     <div v-else class="col-lg-12 order-1  pt-3 pd-0 md-0 center-align  align-center textblock-left">
       <h1 style="text-align:center;" class="m-0 p-0" v-html="data.header"/>
     </div>
-    <div v-if="data.text != ''" class="col order-2 textblock-right ml-1 p-3">
+    <div v-if="data.text != '' && data.header != ''" class="col order-2 textblock-right ml-1 p-3">
+      <div v-html="data.text"/>
+    </div>
+     <div v-else class="col-lg-12 ml-1 p-3">
       <div v-html="data.text"/>
     </div>
      <div v-if="data.twitter == true" class="col-md-12 col-lg-3 order-3 textblock-right ml-1 p-3">
