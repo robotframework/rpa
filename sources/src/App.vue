@@ -33,7 +33,7 @@ export default {
           feature_box: false,
           data: {
             text: {
-              header: "Introduction",
+              header: "",
               text:
                 "<p>Robot Framework is an open source robotic process automation (RPA) a solution that is used to automate business processes. It is open and extensible which means that it can be integrated with virtually any other tool to create powerful and flexible RPA solutions.<p>Robot’s core framework is a generic automation platform that is hugely popular in test automation and has an active community of thousands of developers with many industry leading companies using it in their software development. This means that Robot Framework is actively supported and continuously improving.</p><p>The extensibility of Robot Framework is enabled by its modular architecture that builds on top of extension libraries. The Robot Framework community develops and maintains these libraries that provide functionality such as optical image recognition, database access, HTTP APIs, iOS and Android application support, and remote execution. It is also trivially easy to create new libraries out of Python or Java code which enables any user to integrate new functionality into Robot Framework.</p></p>Being open source also means that Robot Framework is free to use without licensing costs and you can run any number of Robot Framework RPA processes in parallel. Orchestration functionality in enterprise scale projects are available through Jenkins plugins.</p>"
             }
