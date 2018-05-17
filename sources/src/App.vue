@@ -148,8 +148,7 @@ export default {
             text: {
               header: "FAQ",
               text:
-                '<p>Please find here some frequently asked questions related to Robot Framework RPA Tool:</p>\
-                <div class="faq"><p><b>Q</b>: What is the price for Robot Framework RPA Tool?</p>\
+                '<div class="faq"><p><b>Q</b>: What is the price for Robot Framework RPA Tool?</p>\
                 <p>Robot Framework RPA tool is an open source tool and it is free to use without license costs.</p>\
                 <p><b>Q</b>: license?</p> \
                 <p>Apache License 2.0</p>\
