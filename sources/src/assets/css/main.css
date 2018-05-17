@@ -351,6 +351,21 @@ div.faq p:nth-child(2n) {
 
 tr td:first-child {
   font-weight: bold;
+  padding: auto 0;
+}
+
+.table tr th,
+tr,
+tr td,
+thead {
+  text-align: center;
+  font-size: 0.9em;
+  border: 1px solid rgb(0, 192, 181);
+}
+
+.table tr td {
+  max-width: 100px;
+  vertical-align: middle;
 }
 
 table {
