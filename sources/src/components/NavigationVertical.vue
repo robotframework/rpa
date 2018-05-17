@@ -1,38 +1,24 @@
 <template>
 <section>
 <b-nav  tag="nav" toggleable="md" vertical id="navigation" class="col-sm-3 col-md-2 d-none d-md-block sidebar">
-  <b-navbar-brand style="text-transform:uppercase;">
-        <b-img :src="require('@/assets/img/ROBOTFW_Mark_White_LOW_cropped.png')" class="img-fluid" alt="Robot Frameworkg logo"/>
+  <b-navbar-brand >
+        <b-img style="margin:0;padding:15%;" :src="require('@/assets/img/ROBOTFW_Mark_White_LOW_cropped.png')" class="img-fluid" alt="Robot Frameworkg logo"/>
+        
   </b-navbar-brand>
-    <b-nav-item v-for="item in pages" v-if="item.hide_from_nav != true" v-bind:key="item.title" :href="'#'+item.title.toLowerCase()">{{item.title}}</b-nav-item>
+  <p style="text-transform: none;font-size: 0.5em;color:#999;text-align:center;padding:5%;">The initial development of Robot Framework RPA has been sponsored by five Finnish companies who are also members of the Robot Framework Foundation.</p>
+    <p v-for="(item,index) in pages" :key="index">{{item}}</p>
 </b-nav>
 
-
- <b-navbar  toggleable="md" fixed="top" type="dark" id="navigation-collapsed" class="d-md-none">
-  <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
-  <b-navbar-brand class="p-0 m-0 d-block d-md-none" href="#">
-    ROBOT FRAMEWORK <b-img :src="require('@/assets/img/ROBOTFW_Mark_White_LOW_cropped.png')" class="" style="height:30px;"  alt="Robot Frameworkg logo"/>
-  </b-navbar-brand>
-  <b-collapse is-nav id="nav_collapse">
-    <b-navbar-nav class="align-middle">
-      <b-nav-item v-for="item in pages" v-if="item.hide_from_nav != true" v-bind:key="item.title" :href="'#'+item.title.toLowerCase()">{{item.title}}</b-nav-item>
-    </b-navbar-nav>
-  </b-collapse>
-
-</b-navbar>
 </section>
 </template>
 
 <script>
 export default {
-  props: ["pages"],
-  methods: {
-    onActivate(target) {
-      this.$router.push("/" + target);
-    }
-  },
-  created() {
-    this.$root.$on("bv::scrollspy::activate", this.onActivate);
+  // props: ["pages"],
+  data() {
+    return {
+      pages: ["Siili Solutions", "Knowit", "VALA Group", "Qentinel", "Eficode"]
+    };
   }
 };
 </script>
