@@ -1,7 +1,7 @@
 <template>
   <div class="row">
-       <div class="col table-responsive p-5">
-         <b-table :items="items" :fields="fields"></b-table>
+       <div class="col  table-responsive p-5">
+         <b-table striped class="card" :items="items" :fields="fields"></b-table>
        </div>
   </div>
 </template>

@@ -313,6 +313,11 @@ hr {
   line-height: 1.3;
 }
 
+table.card {
+  display: inherit;
+  height: auto;
+}
+
 .card-body p {
   margin-top: 10px;
 }
@@ -346,6 +351,10 @@ div.faq p:nth-child(2n) {
 
 tr td:first-child {
   font-weight: bold;
+}
+
+table {
+  font-family: 'Courier New', Courier, monospace;
 }
 
 .textblock-right {
