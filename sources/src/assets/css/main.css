@@ -9,9 +9,10 @@ body {
   background-color: #fff;
   font-family: Georgia;
   font-size: 1.2rem;
-  ;
+  color: #444;
   text-align: left;
   overflow-x: hidden;
+  line-height: 1.5;
 }
 
 #header-robologo {
@@ -20,6 +21,11 @@ body {
 
 .b-card-body p a {
   color: #fff;
+}
+
+p {
+  max-width: 75ch;
+  padding: 0 2%;
 }
 
 .footer-content {
@@ -105,6 +111,10 @@ h2 {
 h3 {
   font-size: 2rem;
   margin-top: 3rem;
+}
+
+.more-space {
+  margin: 20px 0;
 }
 
 h1.main-header {
@@ -316,7 +326,9 @@ table.card {
 }
 
 .card-body p {
-  margin-top: 10px;
+  margin-top: 0px;
+  padding: 0;
+  color: #444;
 }
 
 .card a {
@@ -333,7 +345,7 @@ table {
 }
 
 div.faq p {
-  color: #333;
+  color: #444;
   margin: 0;
   padding: 0;
 }
