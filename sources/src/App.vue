@@ -60,7 +60,7 @@ export default {
           table_box: true,
           data: {
             text: {
-              header: "Comparison between closed and open solutions",
+              header: "Comparison between open and closed RPA solutions",
               text: ""
             },
 
