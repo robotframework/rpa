@@ -5,8 +5,8 @@
         <b-img style="margin:0;padding:15%;" :src="require('@/assets/img/ROBOTFW_Mark_White_LOW_cropped.png')" class="img-fluid" alt="Robot Frameworkg logo"/>
         
   </b-navbar-brand>
-  <p style="text-transform: none;font-size: 0.5em;color:#999;text-align:center;padding:5%;">The initial development of Robot Framework RPA has been sponsored by five Finnish companies who are also members of the Robot Framework Foundation.</p>
-    <p v-for="(item,index) in pages" :key="index">{{item}}</p>
+  <p style="text-transform: none;font-size: 0.5em;color:#999;text-align:left;padding:10%;">The initial development of Robot Framework RPA has been sponsored by five Finnish companies who are also members of the Robot Framework Foundation.</p>
+    <b-nav-item :href="item.href" v-for="(item,index) in pages" :key="index">{{item.title}}</b-nav-item>
 </b-nav>
 
 </section>
@@ -17,7 +17,28 @@ export default {
   // props: ["pages"],
   data() {
     return {
-      pages: ["Siili Solutions", "Knowit", "VALA Group", "Qentinel", "Eficode"]
+      pages: [
+        {
+          title: "Siili Solutions",
+          href: "https://www.siili.com"
+        },
+        {
+          title: "Knowit",
+          href: "https://www.knowit.fi"
+        },
+        {
+          title: "VALA Group",
+          href: "https://www.valagroup.com"
+        },
+        {
+          title: "Qentinel",
+          href: "https://qentinel.com"
+        },
+        {
+          title: "Eficode",
+          href: "https://www.eficode.com"
+        }
+      ]
     };
   }
 };
